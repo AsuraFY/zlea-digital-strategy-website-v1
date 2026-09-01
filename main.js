@@ -1,3 +1,21 @@
+// Keep viewport sizing and anchor offsets aligned with the actual navbar,
+// including font loading, language changes, zoom, and the mobile menu.
+const siteHeader = document.querySelector(".site-header");
+function updateHeaderHeight() {
+  document.documentElement.style.setProperty(
+    "--header-height",
+    `${siteHeader.getBoundingClientRect().height}px`
+  );
+}
+updateHeaderHeight();
+if ("ResizeObserver" in window) {
+  const headerObserver = new ResizeObserver(updateHeaderHeight);
+  headerObserver.observe(siteHeader);
+} else {
+  window.addEventListener("resize", updateHeaderHeight);
+  window.addEventListener("load", updateHeaderHeight);
+}
+
 const translations = {
   en: {
     nav_help: "Get Help",
