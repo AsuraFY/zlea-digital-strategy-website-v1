@@ -283,7 +283,7 @@ main { flex: 1; }
 .navbar .dropdown-item:hover, .navbar .dropdown-item:focus, .navbar .dropdown-item.active { background: var(--surface-2); color: var(--pink-pale); }
 .navbar .nav-link.active { color: var(--pink-pale); }
 .navbar button.nav-link { border: 0; background: none; }
-.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn:disabled { opacity: 1; cursor: default; }
 .guide-panel { padding: clamp(1.5rem, 3vw, 3rem); background: linear-gradient(145deg, var(--surface-2), var(--surface)); border: 1px solid rgba(239,77,145,.28); border-radius: var(--radius); box-shadow: var(--shadow); }
 .guide-panel h2 { font-size: clamp(2.1rem, 3.2vw, 3.2rem); margin: 1rem 0 1.5rem; }
 .guide-topics { display: grid; gap: .75rem; border-block: 1px solid var(--border); padding: 1.5rem 0; margin: 1.5rem 0; color: var(--pink-pale); }
@@ -325,7 +325,7 @@ main { flex: 1; }
 .language-choice button { padding: .4rem .3rem; border: 0; background: transparent; color: var(--muted); }
 .language-choice button[aria-pressed="true"] { color: var(--pink-pale); font-weight: 700; text-decoration: underline; text-underline-offset: .3rem; }
 .language-choice button:hover { color: var(--text); }
-.legal-pending { background: none; padding: 0; border: 0; color: var(--muted); cursor: not-allowed; }
+.legal-pending { background: none; padding: 0; border: 0; color: var(--muted); cursor: default; }
 .resource-categories { display: flex; flex-wrap: wrap; gap: .6rem; list-style: none; padding: 0; margin: 2rem 0; }
 body:not([data-page="home"]) main h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; margin-bottom: 1.5rem; }
 .resource-card h2, .resource-card h3 { font-size: 1.2rem; }
