@@ -1,283 +1,53 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZLEA Digital Safety</title>
-  <meta name="description" content="Confidential, practical digital safety help for individuals.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header sticky-top">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#home">
-          <span class="brand-mark">Z</span>
-          <span>ZLEA <strong>Digital Safety</strong></span>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
-            <li class="nav-item">
-              <button class="lang-switch btn btn-sm" id="langSwitch" type="button" aria-label="Switch language">FR</button>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary-soft ms-lg-2" href="#help" data-i18n="nav_help">Get Help</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="hero-section">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
-            <span class="eyebrow" data-i18n="hero_eyebrow">CONFIDENTIAL • PRACTICAL • HUMAN</span>
-            <h1 data-i18n="hero_title">Digital safety should feel safe.</h1>
-            <p class="hero-copy" data-i18n="hero_text">
-              Practical and confidential help to secure your accounts, protect your privacy, and understand what to do when something feels wrong online.
-            </p>
-            <div class="d-flex flex-wrap gap-3 mt-4">
-              <a href="#help" class="btn btn-glow btn-lg" data-i18n="hero_help">Get help</a>
-              <a href="#resources" class="btn btn-outline-soft btn-lg" data-i18n="hero_resources">Explore free resources</a>
-            </div>
-            <div class="trust-note mt-4">
-              <span class="trust-icon">◆</span>
-              <span data-i18n="hero_trust">Your passwords stay yours. We guide you without asking for your credentials.</span>
-            </div>
-          </div>
-
-          <div class="col-lg-5">
-            <div class="security-card">
-              <div class="security-card-top">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-              <div class="security-orbit">
-                <div class="orbit-ring ring-one"></div>
-                <div class="orbit-ring ring-two"></div>
-                <div class="shield">✦</div>
-              </div>
-              <h2 class="h4 mt-4" data-i18n="hero_card_title">A private place to ask for help</h2>
-              <p class="mb-0 muted" data-i18n="hero_card_text">
-                For people who need digital support without having to become cybersecurity experts.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="help" class="section-pad">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow" data-i18n="help_eyebrow">GET HELP</span>
-          <h2 data-i18n="help_title">Tell us what you are worried about.</h2>
-          <p data-i18n="help_intro">You do not need to know the technical name of the problem. Start with the situation you recognize.</p>
-        </div>
-
-        <div class="row g-4 mt-2">
-          <div class="col-md-6 col-xl-4">
-            <article class="help-card h-100">
-              <div class="icon-wrap">✉</div>
-              <h3 data-i18n="help_account_title">Someone may have access to my account</h3>
-              <p data-i18n="help_account_text">We can help you review your Google account, signed-in devices, security settings, and recovery options.</p>
-              <a href="#consultation" data-i18n="help_action">Ask for help →</a>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-xl-4">
-            <article class="help-card h-100">
-              <div class="icon-wrap">♡</div>
-              <h3 data-i18n="help_breakup_title">I am going through a breakup or separation</h3>
-              <p data-i18n="help_breakup_text">Get practical guidance to reduce unwanted digital access, review sharing settings, and protect your personal accounts.</p>
-              <a href="#consultation" data-i18n="help_action">Ask for help →</a>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-xl-4">
-            <article class="help-card h-100">
-              <div class="icon-wrap">◎</div>
-              <h3 data-i18n="help_privacy_title">I am worried about my privacy online</h3>
-              <p data-i18n="help_privacy_text">We can help you understand account activity, location sharing, privacy settings, and common digital risks.</p>
-              <a href="#consultation" data-i18n="help_action">Ask for help →</a>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-xl-4">
-            <article class="help-card h-100">
-              <div class="icon-wrap">☁</div>
-              <h3 data-i18n="help_bullying_title">I am experiencing online harassment or cyberbullying</h3>
-              <p data-i18n="help_bullying_text">We can help you think through practical next steps and point you toward specialist services when needed.</p>
-              <a href="#consultation" data-i18n="help_action">Ask for help →</a>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-xl-4">
-            <article class="help-card h-100">
-              <div class="icon-wrap">✓</div>
-              <h3 data-i18n="help_checkup_title">I want a digital safety checkup</h3>
-              <p data-i18n="help_checkup_text">Review the basics of your Google and Android security with someone guiding you step by step.</p>
-              <a href="#consultation" data-i18n="help_action">Ask for help →</a>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-xl-4">
-            <article class="help-card h-100">
-              <div class="icon-wrap">?</div>
-              <h3 data-i18n="help_other_title">Something else happened online</h3>
-              <p data-i18n="help_other_text">Tell us what is happening. If it is outside our scope, we will be transparent and try to direct you to the right kind of help.</p>
-              <a href="#consultation" data-i18n="help_action">Ask for help →</a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="resources" class="section-pad section-alt">
-      <div class="container">
-        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-end section-heading">
-          <div>
-            <span class="eyebrow" data-i18n="resources_eyebrow">FREE RESOURCES</span>
-            <h2 data-i18n="resources_title">Learn before you need help.</h2>
-            <p data-i18n="resources_intro">Simple digital safety guides for everyday situations.</p>
-          </div>
-          <a class="text-link" href="#" data-i18n="resources_all">View all resources →</a>
-        </div>
-
-        <div class="row g-4 mt-2">
-          <div class="col-md-4">
-            <article class="resource-card h-100">
-              <span class="tag">GOOGLE</span>
-              <h3 data-i18n="res1_title">How to check where your Google account is signed in</h3>
-              <p data-i18n="res1_text">A beginner-friendly walkthrough of the devices and sessions connected to your account.</p>
-              <a href="#" data-i18n="read_guide">Read guide →</a>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="resource-card h-100">
-              <span class="tag">PRIVACY</span>
-              <h3 data-i18n="res2_title">Digital things to review after a breakup</h3>
-              <p data-i18n="res2_text">Accounts, shared devices, location settings, recovery methods, and other places people often forget.</p>
-              <a href="#" data-i18n="read_guide">Read guide →</a>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="resource-card h-100">
-              <span class="tag">ANDROID</span>
-              <h3 data-i18n="res3_title">A simple Android privacy checkup</h3>
-              <p data-i18n="res3_text">A practical checklist for reviewing your phone without needing advanced technical knowledge.</p>
-              <a href="#" data-i18n="read_guide">Read guide →</a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="consultation" class="section-pad">
-      <div class="container">
-        <div class="consultation-panel">
-          <div class="row g-4 align-items-center">
-            <div class="col-lg-7">
-              <span class="eyebrow" data-i18n="consult_eyebrow">PRIVATE CONSULTATION</span>
-              <h2 data-i18n="consult_title">Need someone to walk through it with you?</h2>
-              <p data-i18n="consult_text">
-                Book a confidential virtual session. We will start with what you are worried about and guide you step by step.
-              </p>
-              <p class="small-note" data-i18n="consult_note">
-                Never send passwords, authentication codes, recovery codes, or other credentials through this website.
-              </p>
-            </div>
-            <div class="col-lg-5">
-              <form class="mini-form" onsubmit="return false;">
-                <label for="name" data-i18n="form_name_label">Name or preferred name</label>
-                <input id="name" type="text" data-i18n-placeholder="form_name_placeholder" placeholder="How should we address you?">
-
-                <label for="email" data-i18n="form_email_label">Email</label>
-                <input id="email" type="email" placeholder="you@example.com">
-
-                <label for="topic" data-i18n="form_topic_label">What do you need help with?</label>
-                <select id="topic">
-                  <option data-i18n="form_topic_1">Google account security</option>
-                  <option data-i18n="form_topic_2">Android privacy or security</option>
-                  <option data-i18n="form_topic_3">Breakup or separation safety</option>
-                  <option data-i18n="form_topic_4">Online harassment or cyberbullying</option>
-                  <option data-i18n="form_topic_5">Something else</option>
-                </select>
-
-                <button class="btn btn-glow w-100 mt-3" type="button" data-i18n="form_button">Booking coming soon</button>
-                <p class="form-status mb-0" data-i18n="form_status">This prototype does not send or store your information yet.</p>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section-pad section-alt">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-5">
-            <span class="eyebrow" data-i18n="about_eyebrow">ABOUT</span>
-            <h2 data-i18n="about_title">Digital safety without the intimidation.</h2>
-          </div>
-          <div class="col-lg-7">
-            <p class="lead-copy" data-i18n="about_text_1">
-              ZLEA Digital Safety exists for people who need practical help protecting their digital lives, especially when they do not have the time, confidence, or technical knowledge to do everything alone.
-            </p>
-            <p data-i18n="about_text_2">
-              Our starting focus is personal digital safety, with particular attention to women and young people. We aim to make support understandable, respectful, and confidential.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="newsletter-section">
-      <div class="container">
-        <div class="newsletter-box">
-          <div>
-            <span class="eyebrow" data-i18n="newsletter_eyebrow">STAY INFORMED</span>
-            <h2 class="h3 mb-2" data-i18n="newsletter_title">Practical digital safety, in your inbox.</h2>
-            <p class="mb-0 muted" data-i18n="newsletter_text">Guides, useful links, and updates. No account required.</p>
-          </div>
-          <form class="newsletter-form" onsubmit="return false;">
-            <input type="email" aria-label="Email" placeholder="you@example.com">
-            <button class="btn btn-glow" type="button" data-i18n="newsletter_button">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="d-flex flex-column flex-md-row justify-content-between gap-3">
-        <div>
-          <strong>ZLEA Digital Safety</strong>
-          <p class="mb-0 muted" data-i18n="footer_tagline">Confidential, practical help for a safer digital life.</p>
-        </div>
-        <div class="footer-links">
-          <a href="#" data-i18n="footer_privacy">Privacy</a>
-          <a href="#" data-i18n="footer_terms">Terms</a>
-          <a href="#help" data-i18n="footer_help">Get Help</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <button id="chatToggle" class="chat-toggle" type="button" aria-label="Open digital safety assistant">✦</button>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Digital Safety Guide & Get Help | ZLEA Digital Safety</title><meta name="description" content="A free digital safety guide and practical support for your accounts, devices and privacy."><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body data-page="home"><a class="skip-link" href="#main-content">Skip to content / Aller au contenu</a><header class="site-header sticky-top"><nav class="navbar navbar-expand-lg" aria-label="Main navigation"><div class="container">
+<a class="navbar-brand" href="index.html"><span class="brand-mark">Z</span><span>ZLEA <strong>Digital Safety</strong></span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<li class="nav-item"><a data-i18n="nav_help" class="nav-link" href="index.html#help">Get Help</a></li>
+<li class="nav-item dropdown"><button data-i18n="nav_learn" class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</button><ul class="dropdown-menu">
+<li><a data-i18n="nav_resources" class="dropdown-item" href="resources.html">Free Resources</a></li>
+<li><a data-i18n="nav_news" class="dropdown-item" href="news.html">News</a></li>
+</ul></li>
+<li class="nav-item"><a data-i18n="nav_about" class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><button class="lang-switch btn btn-sm" id="langSwitch" type="button" aria-label="Passer en français">FR</button></li>
+</ul></div></div></nav></header><main id="main-content"><section id="home" class="hero-section"><div class="container"><div class="row align-items-center g-5"><div class="col-lg-7">
+<span data-i18n="hero_eyebrow" class="eyebrow">FREE DIGITAL SAFETY GUIDE</span>
+<h1 data-i18n="hero_title">Take control of your digital life.</h1>
+<p data-i18n="hero_text" class="hero-copy">Your accounts, devices and personal information are part of your everyday life. Knowing how to protect them should not require you to be a technology expert. Our free Digital Safety Guide walks you through simple steps to understand your digital environment, protect your privacy and make safer choices online.</p>
+<button data-i18n="guide_download" class="btn btn-glow mt-3" type="button" disabled aria-describedby="guide-status">Download the free guide</button>
+<p data-i18n="guide_status" id="guide-status" class="availability-note mt-3">The guide is being prepared. The download is not available yet.</p>
+</div><div class="col-lg-5"><aside class="guide-panel" aria-labelledby="guide-title">
+<span data-i18n="guide_format" class="eyebrow">THE FREE E-BOOK</span>
+<h2 data-i18n="guide_title" id="guide-title">Digital Safety Guide</h2>
+<p data-i18n="guide_subtitle">Understand your digital environment. Protect what matters to you.</p>
+<div class="guide-topics"><span data-i18n="guide_accounts">Your accounts</span><span data-i18n="guide_devices">Your devices</span><span data-i18n="guide_privacy">Your privacy</span></div>
+<p class="mb-0 muted">ZLEA Digital Safety</p></aside></div></div></div></section>
+<section id="help" class="section-pad section-alt"><div class="container"><div class="section-heading">
+<span data-i18n="help_eyebrow" class="eyebrow">GET HELP</span>
+<h2 data-i18n="help_title">Tell us what is on your mind.</h2>
+<p data-i18n="help_intro">You do not need to know the technical name of the problem. Tell us what is happening, ask a question, or send us a message.</p>
+</div><div class="row g-4 mt-2"><div class="col-lg-8"><form id="help-form" class="mini-form message-form" onsubmit="return false;" autocomplete="off" aria-describedby="message-status privacy-note">
+<p data-i18n="message_status" id="message-status" class="availability-note">Message sending is not available yet. Please do not enter personal or sensitive information in this preview.</p>
+<label data-i18n="message_label" for="message">Your message</label>
+<textarea id="message" rows="7" maxlength="5000" aria-describedby="privacy-note" required></textarea>
+<div class="reply-choice"><input type="checkbox" id="replyRequested" aria-controls="replyFields"><label data-i18n="reply_label" for="replyRequested">I would like an email reply</label></div>
+<div id="replyFields" hidden><label data-i18n="email_label" for="replyEmail">An email address you can safely access</label><input id="replyEmail" type="email" maxlength="254" disabled></div>
+<p data-i18n="anonymous_note" class="small-note mt-3">You can leave out your name and email. Without an email address, we cannot reply directly. Omitting these details does not guarantee technical anonymity.</p>
+<p data-i18n="privacy_note" id="privacy-note" class="muted">Never include passwords, verification codes, recovery codes, or identifying details about other people.</p>
+<button data-i18n="send_message" class="btn btn-glow" type="submit" disabled>Send message</button>
+</form></div><div class="col-lg-4"><aside class="consultation-panel">
+<span data-i18n="consult_eyebrow" class="eyebrow">PREFER TO TALK?</span>
+<h3 data-i18n="consult_title">A virtual consultation</h3>
+<p data-i18n="consult_text" class="muted">For questions that need a longer conversation, a virtual session can offer step-by-step guidance.</p>
+<button data-i18n="consult_button" class="btn btn-outline-soft" type="button" disabled aria-describedby="booking-status">Book a consultation</button>
+<p data-i18n="booking_status" id="booking-status" class="availability-note mt-3">Booking is not open yet.</p>
+</aside><p data-i18n="help_limits" class="small-note mt-4">This is not an emergency service. If you are in immediate danger, contact local emergency services when it is safe to do so.</p></div></div></div></section>
+<section class="newsletter-section"><div class="container"><div class="newsletter-box"><div>
+<span data-i18n="newsletter_eyebrow" class="eyebrow">STAY INFORMED</span>
+<h2 data-i18n="newsletter_title" class="h3">Practical digital safety, in your inbox.</h2>
+<p data-i18n="newsletter_text" class="muted">Guides, useful links, and updates. No account required.</p>
+</div><div><p data-i18n="newsletter_status" class="availability-note">Newsletter sign-up will open soon.</p><button data-i18n="newsletter_button" class="btn btn-glow" type="button" disabled>Subscribe</button></div></div></div></section></main><footer class="site-footer"><div class="container d-flex flex-wrap justify-content-between gap-3"><div><strong>ZLEA Digital Safety</strong><p data-i18n="footer_tagline" class="muted mb-0">Practical support for your digital life.</p></div><div class="footer-links"><a href="about.html" data-i18n="nav_about">About</a><a href="index.html#help" data-i18n="nav_help">Get Help</a></div></div></footer>  <button id="chatToggle" class="chat-toggle" type="button" aria-label="Open digital safety assistant">✦</button>
 
   <aside id="chatPanel" class="chat-panel" aria-hidden="true">
     <div class="chat-header">
@@ -299,7 +69,5 @@
     </div>
   </aside>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js"></script>
-</body>
-</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="content.js"></script><script src="main.js"></script></body></html>
