@@ -319,3 +319,19 @@ main { flex: 1; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Approved V1 content structure. */
+.language-choice { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; color: var(--muted); }
+.language-choice button { padding: .4rem .3rem; border: 0; background: transparent; color: var(--muted); }
+.language-choice button[aria-pressed="true"] { color: var(--pink-pale); font-weight: 700; text-decoration: underline; text-underline-offset: .3rem; }
+.language-choice button:hover { color: var(--text); }
+.legal-pending { background: none; padding: 0; border: 0; color: var(--muted); cursor: not-allowed; }
+.resource-categories { display: flex; flex-wrap: wrap; gap: .6rem; list-style: none; padding: 0; margin: 2rem 0; }
+body:not([data-page="home"]) main h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; margin-bottom: 1.5rem; }
+.resource-card h2, .resource-card h3 { font-size: 1.2rem; }
+.resource-card { display: flex; flex-direction: column; align-items: flex-start; gap: .4rem; }
+.resource-card p { flex: 1; }
+.guide-panel { min-height: 320px; display: flex; flex-direction: column; justify-content: center; }
+#consultation h2 { font-size: 1.8rem; }
+#help-form, #consultation { scroll-margin-top: 1rem; }
+.section-heading > .btn, .section-heading > .d-flex { margin-top: 1rem; }
